@@ -38,7 +38,15 @@ function NavigationButton({ children }) {
 }
 
 function MainContent() {
-  return <div>Main Content Here</div>;
+  return (
+    <div className="content-container">
+      <ProjectList />
+    </div>
+  );
+}
+
+function ProjectList() {
+  return <div>Test</div>;
 }
 
 function Footer() {
