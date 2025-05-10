@@ -57,7 +57,6 @@ h1 {
 .navbutton:hover {
   background-color: #ffffff;
   border: none;
-  color: #5da9e9;
   text-decoration: underline;
   text-decoration-thickness: 10%;
   text-underline-offset: 10px;
@@ -73,13 +72,27 @@ h1 {
 
 .content-container {
   margin: 0 auto;
-  display: flex;
   height: 65vh;
-  width: 80vw;
+}
+
+.project-list {
+  padding-top: 2vh;
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  overflow: auto;
+}
+
+.project {
+  height: 125px;
+  width: 125px;
+  margin: auto;
+  background-color: #f5b82e;
 }
 
 .footer {
-  background-color: #253237;
+  background-color: #c0c0c0;
   height: 10vh;
   border-top: #5da9e9;
+  border-width: 5px;
 }

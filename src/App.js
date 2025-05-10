@@ -46,7 +46,41 @@ function MainContent() {
 }
 
 function ProjectList() {
-  return <div>Test</div>;
+  const projects = [
+    {
+      title: "Skin Roulette",
+      description: "Random Valorant Skin Roulette.",
+    },
+    {
+      title: "Portfolio",
+      description: "My personal portfolio for my React projects.",
+    },
+    {
+      title: "Placeholder",
+      description: null,
+    },
+    {
+      title: "Placeholder 2",
+      description: null,
+    },
+    {
+      title: "Placeholder 3",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+  ];
+  return (
+    <div className="project-list">
+      {projects.map((project) => (
+        <div className="project">
+          {project.title} + {project.description}
+        </div>
+      ))}
+    </div>
+  );
 }
 
 function Footer() {
