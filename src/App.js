@@ -10,7 +10,16 @@ export default function App() {
 }
 
 function Header() {
-  return <header className="header">Header here</header>;
+  return (
+    <>
+      <header className="header">
+        <h1>
+          THOMAS <br />
+          SHAFFERY
+        </h1>
+      </header>
+    </>
+  );
 }
 
 function NavigationBar() {
