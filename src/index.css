@@ -39,7 +39,7 @@ h1 {
 
 .navigation-list {
   height: 5vh;
-  background-color: #5da9e9;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -49,8 +49,7 @@ h1 {
   padding: 10px;
   background-color: inherit;
   border: none;
-  border-color: #5da9e9;
-  color: #ffffff;
+  color: #0f110c;
   cursor: pointer;
   transition-duration: 0.5s;
 }
@@ -59,12 +58,16 @@ h1 {
   background-color: #ffffff;
   border: none;
   color: #5da9e9;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #5da9e9;
 }
 
 .navbutton:active {
   border: none;
   transition-duration: 0.1s;
   color: #40c9a2;
+  text-decoration-color: #fb8b24;
 }
 
 .footer {
