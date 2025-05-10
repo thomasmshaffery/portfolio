@@ -10,22 +10,22 @@ export default function App() {
 }
 
 function Header() {
-  return <div>Header here</div>;
+  return <header className="header">Header here</header>;
 }
 
 function NavigationBar() {
   return (
-    <div>
-      <NavigationButton>Home</NavigationButton>
-      <NavigationButton>About Me</NavigationButton>
-      <NavigationButton>Projects</NavigationButton>
-      <NavigationButton>Contact Me</NavigationButton>
-    </div>
+    <ul className="navigation-list">
+      <NavigationButton>HOME</NavigationButton>
+      <NavigationButton>ABOUT ME</NavigationButton>
+      <NavigationButton>PROJECTS</NavigationButton>
+      <NavigationButton>CONTACT</NavigationButton>
+    </ul>
   );
 }
 
 function NavigationButton({ children }) {
-  return <button>{children}</button>;
+  return <button className="navbutton">{children}</button>;
 }
 
 function MainContent() {
@@ -33,5 +33,5 @@ function MainContent() {
 }
 
 function Footer() {
-  return <div>Footer Content here</div>;
+  return <footer className="footer">Footer Content here</footer>;
 }
