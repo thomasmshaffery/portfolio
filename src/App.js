@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <Header />
+      <NavigationBar />
+      <MainContent />
+      <Footer />
+    </>
+  );
+}
+
+function Header() {
+  return <div>Header here</div>;
+}
+
+function NavigationBar() {
+  return (
+    <div>
+      <NavigationButton>Home</NavigationButton>
+      <NavigationButton>About Me</NavigationButton>
+      <NavigationButton>Projects</NavigationButton>
+      <NavigationButton>Contact Me</NavigationButton>
     </div>
   );
 }
 
-export default App;
+function NavigationButton({ children }) {
+  return <button>{children}</button>;
+}
+
+function MainContent() {
+  return <div>Main Content Here</div>;
+}
+
+function Footer() {
+  return <div>Footer Content here</div>;
+}
