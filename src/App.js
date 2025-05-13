@@ -1,9 +1,56 @@
 export default function App() {
+  const projects = [
+    {
+      title: "Skin Roulette",
+      description: "Random Valorant Skin Roulette.",
+    },
+    {
+      title: "Portfolio",
+      description: "My personal portfolio for my React projects.",
+    },
+    {
+      title: "Placeholder",
+      description: null,
+    },
+    {
+      title: "Placeholder 2",
+      description: null,
+    },
+    {
+      title: "Placeholder 3",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+    {
+      title: "Placeholder 4",
+      description: null,
+    },
+  ];
+
   return (
     <>
       <Header />
       <NavigationBar />
-      <MainContent />
+      <Body projects={projects} />
       <Footer />
     </>
   );
@@ -37,49 +84,29 @@ function NavigationButton({ children }) {
   return <button className="navbutton">{children}</button>;
 }
 
-function MainContent() {
+function Body({ projects }) {
   return (
     <div className="content-container">
-      <ProjectList />
+      <ProjectList projects={projects} />
     </div>
   );
 }
 
-function ProjectList() {
-  const projects = [
-    {
-      title: "Skin Roulette",
-      description: "Random Valorant Skin Roulette.",
-    },
-    {
-      title: "Portfolio",
-      description: "My personal portfolio for my React projects.",
-    },
-    {
-      title: "Placeholder",
-      description: null,
-    },
-    {
-      title: "Placeholder 2",
-      description: null,
-    },
-    {
-      title: "Placeholder 3",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-  ];
+function ProjectList({ projects }) {
   return (
-    <div className="project-list">
+    <ul className="project-list">
       {projects.map((project) => (
-        <div className="project">
-          {project.title} + {project.description}
-        </div>
+        <Project project={project} />
       ))}
-    </div>
+    </ul>
+  );
+}
+
+function Project({ project }) {
+  return (
+    <li className="project">
+      {project.title} + {project.description}
+    </li>
   );
 }
 

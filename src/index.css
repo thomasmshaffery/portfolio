@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
 
 * {
   margin: 0;
@@ -11,6 +11,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+ul {
+  list-style: none;
 }
 
 code {
@@ -73,6 +78,7 @@ h1 {
 .content-container {
   margin: 0 auto;
   height: 65vh;
+  overflow: auto;
 }
 
 .project-list {
@@ -84,10 +90,11 @@ h1 {
 }
 
 .project {
-  height: 125px;
-  width: 125px;
+  height: 150px;
+  width: 150px;
   margin: auto;
   background-color: #f5b82e;
+  border-radius: 5px;
 }
 
 .footer {
