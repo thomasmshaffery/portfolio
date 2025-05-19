@@ -1,51 +1,50 @@
+const projects = [
+  {
+    title: "Skin Roulette",
+    description: "Random Valorant Skin Roulette.",
+  },
+  {
+    title: "Portfolio",
+    description: "My personal portfolio for my React projects.",
+  },
+  {
+    title: "Placeholder",
+    description: null,
+  },
+  {
+    title: "Placeholder 2",
+    description: null,
+  },
+  {
+    title: "Placeholder 3",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+  {
+    title: "Placeholder 4",
+    description: null,
+  },
+];
 export default function App() {
-  const projects = [
-    {
-      title: "Skin Roulette",
-      description: "Random Valorant Skin Roulette.",
-    },
-    {
-      title: "Portfolio",
-      description: "My personal portfolio for my React projects.",
-    },
-    {
-      title: "Placeholder",
-      description: null,
-    },
-    {
-      title: "Placeholder 2",
-      description: null,
-    },
-    {
-      title: "Placeholder 3",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-    {
-      title: "Placeholder 4",
-      description: null,
-    },
-  ];
-
   return (
     <>
       <Header />
